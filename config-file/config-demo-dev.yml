@@ -1,0 +1,5 @@
+
+env : dev
+version : 1001
+hello : 我是dev环境配置中心
+
