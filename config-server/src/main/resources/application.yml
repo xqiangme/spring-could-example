@@ -1,39 +1,17 @@
 server:
-  port: 8704
+  port: 8705
 
 #应用名称
 spring:
   application:
     name: server-zuul
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/xqiangme/spring-could-example/
+          searchPaths: config-file
+          username:
+          password:
 
-# 注册中心配置
-eureka:
-  client:
-    serviceUrl:
-      # 配置服务注册中心集群时，此处可以配置多个地址(通过逗号隔开)
-      defaultZone: http://127.0.0.1:7001/eureka/
-
-zuul:
-  host:
-    connect-timeout-millis: 3000
-    socket-timeout-millis: 3000
-  routes:
-    api-ribbon:
-      path: /api-ribbon/**
-      serviceId: server-consum-ribbon
-    api-feign:
-      path: /api-feign/**
-      serviceId: server-consum-feign
-
-# 添加ribbon的超时时间设置
-ribbon:
-  ReadTimeout: 3000
-  ConnectTimeout: 3000
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeout-in-milliseconds: 3000
