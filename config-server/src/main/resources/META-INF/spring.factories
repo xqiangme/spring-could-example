@@ -1,0 +1,2 @@
+# 注：需要配置自定义解析器全地址
+org.springframework.boot.env.PropertySourceLoader=com.example.config.server.handler.ConfigServerParseHandler

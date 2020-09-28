@@ -1,6 +1,6 @@
-package com.example.ribbon.controller;
+package com.example.feign.controller;
 
-import com.example.ribbon.api.HelloServiceApi;
+import com.example.feign.api.HelloServiceApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

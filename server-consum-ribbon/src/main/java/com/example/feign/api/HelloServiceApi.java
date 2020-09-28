@@ -1,11 +1,10 @@
-package com.example.ribbon.api;
+package com.example.feign.api;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

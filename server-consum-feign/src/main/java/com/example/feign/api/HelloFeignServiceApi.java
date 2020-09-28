@@ -1,6 +1,6 @@
-package com.example.ribbon.api;
+package com.example.feign.api;
 
-import com.example.ribbon.hystrix.HelloFeignServiceHystricFactory;
+import com.example.feign.hystrix.HelloFeignServiceHystricFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

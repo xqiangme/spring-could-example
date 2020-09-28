@@ -1,4 +1,4 @@
-package com.example.provider.filter;
+package com.example.config.server.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

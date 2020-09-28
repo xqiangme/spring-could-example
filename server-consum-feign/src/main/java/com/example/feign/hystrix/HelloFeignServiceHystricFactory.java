@@ -1,6 +1,6 @@
-package com.example.ribbon.hystrix;
+package com.example.feign.hystrix;
 
-import com.example.ribbon.api.HelloFeignServiceApi;
+import com.example.feign.api.HelloFeignServiceApi;
 import feign.hystrix.FallbackFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
