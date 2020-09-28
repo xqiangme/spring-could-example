@@ -1,0 +1,14 @@
+server:
+  port: 7001
+eureka:
+  instance:
+    # hostname不配置的话，会根据操作系统的主机名来获取
+    hostname: 127.0.0.1
+  server:
+    enable-self-preservation: false       # 自我保护模式（默认为打开）
+    eviction-interval-timer-in-ms: 5000  # 续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
+  client:
+    register-with-eureka: false   #是否将自己注册到eureka中
+    fetch-registry: false         #是否从eureka中获取信息
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

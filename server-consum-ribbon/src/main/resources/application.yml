@@ -1,0 +1,20 @@
+server:
+  port: 8703
+
+#应用名称
+spring:
+  application:
+    name: server-consum-ribbon
+
+# 注册中心配置
+eureka:
+  client:
+    serviceUrl:
+      # 配置服务注册中心集群时，此处可以配置多个地址(通过逗号隔开)
+      defaultZone: http://127.0.0.1:7001/eureka/
+
+# 日志等级
+logging:
+  level:
+    root: warn
+    com.example: debug
