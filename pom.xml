@@ -13,6 +13,7 @@
     <module>server-consum-feign</module>
     <module>server-zuul</module>
     <module>config-server</module>
+    <module>config-client</module>
   </modules>
   <packaging>pom</packaging>
 
