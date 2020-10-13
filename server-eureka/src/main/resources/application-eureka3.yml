@@ -1,0 +1,14 @@
+server:
+  port: 8003
+eureka:
+  instance:
+    hostname: eureka3
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false   #是否将自己注册到eureka中
+    fetch-registry: false         #是否从eureka中获取信息
+    service-url:
+      #将自己注册到 eureka1和eureka2
+      defaultZone: http://127.0.0.1:8001/eureka/,http://127.0.0.1:8002/eureka/
